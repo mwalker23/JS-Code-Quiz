@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Your JavaScript Knowledge!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <p class= "start"> Coding Quiz Challenge</p>
+    <p> Answer the questions get the right answer</p>
+    <button id="start" onclick="quizStart()">Start Quiz</button>
+  </div>
+
+  <h3 class="time" style="text-align:right;"></h3>
+  <!-- <div id="main"></div> -->
+
+  <!-- created a div for each question, consisting an unordered list of buttons -->
+  <div class="content hide">
+    <p> To call the function you need to type the name of the function and add ___
+    <ul>
+      <li> <button onclick="answerQuestion(event)" value="false"> A. plus sign </button> </li>
+      <li> <button onclick="answerQuestion(event)" value="true"> B. parentheses </button> </li>
+      <li> <button onclick="answerQuestion(event)" value="false"> C. curly brackets </button> </li>
+      <li> <button onclick="answerQuestion(event)" value="false">D. none </button></li>
+    </ul>
+    </p>
+  </div>
+
+
+  <div class="content hide">
+    <p>When we define a function we could add input placeholders for; ___(s).
+    <ul>
+      <li> <button onclick="answerQuestion(event)" value="false"> A. placeholders </button> </li>
+      <li> <button onclick="answerQuestion(event)" value="true"> B. parameters</button> </li>
+      <li> <button onclick="answerQuestion(event)" value="false"> C. arguments </button> </li>
+      <li> <button onclick="answerQuestion(event)" value="false"> D. none </button> </li>
+    </ul>
+    </p>
+  </div>
+
+
+  <div class="content hide">
+    <p>Variables created without the ___, are always global, even if they are created inside a function.
+    <ul>
+      <li> <button onclick="answerQuestion(event)" value="true"> A. word var </button> </li>
+      <li> <button onclick="answerQuestion(event)" value="false"> B. word closure </button> </li>
+      <li> <button onclick="answerQuestion(event)" value="false"> C. word split </button> </li>
+      <li> <button onclick="answerQuestion(event)" value="false"> D. none </button> </li>
+    </ul>
+    </p>
+  </div>
+
+
+  <div class="content hide">
+    <p>Creating a closure has 4 steps. Third step is defining a ___ ___; and the last step is returning it without calling
+      it.
+    <ul>
+      <li> <button onclick="answerQuestion(event)" value="false"> A. side effect </button> </li>
+      <li> <button onclick="answerQuestion(event)" value="false">B. call-time </button> </li>
+      <li> <button onclick="answerQuestion(event)" value="true">C. child function </button> </li>
+      <li> <button onclick="answerQuestion(event)" value="false">D. none </button> </li>
+    </ul>
+    <p />
+  </div>
+
+
+<div class="content hide">
+  <p>A JavaScript ___ ___ is a comma-separated list of name-value pairs wrapped in curly brackets.
+  <ul>
+    <li> <button onclick="answerQuestion(event)" value="false"> A. function defintion </button> </li>
+    <li> <button onclick="answerQuestion(event)" value="false"> B. function body </button> </li>
+    <li> <button onclick="answerQuestion(event)" value="true"> C. object literal </button> </li>
+    <li> <button onclick="answerQuestion(event)" value="false"> D. none </button> </li>
+  </ul>
+  </p>
+</div>
+  
+
+
+   <h2 class="timer" style="text-align: center;"></h2>
+
+  
+  
+  
+  
+  
+    <script src="./script.js"></script>
+
+
+</body>
+</html>
