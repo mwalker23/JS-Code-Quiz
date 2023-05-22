@@ -1,16 +1,9 @@
 var timeEl = document.querySelector(".time");
 var startButton = document.querySelector("#start");
-// var mainEl = document.getElementById("main");
-var secondsLeft = 31;
+var secondsLeft = 16;
 var questionNumber= 0;
 var questionDivs = document.querySelectorAll(".content");
 console.log(questionDivs);
-
-
-
-// var wordVar = true;
-// var childFunction = true;
-// var objectLiteral = true;
 
 
 function quizStart (){
@@ -18,9 +11,8 @@ function quizStart (){
   questionDivs[questionNumber].classList.remove("hide");
   setTime();
 }
-// question function 
 
-//timer (make timer element)
+//timer 
 function setTime() {
     // Sets interval in variable
     var timerInterval = setInterval(function() {
@@ -31,17 +23,16 @@ function setTime() {
         // Stops execution of action at set interval
         clearInterval(timerInterval);
         // Calls function to create and append image
-        sendMessage();
+        sendMessage("GameOver");
       }
   
     }, 1000);
   }
  
   
-
+//call a function to check answer
 function answerQuestion (event) {
   console.log(event.target);
-  //call a function to check answer
   if (event.target.value == "true") {
     console.log("right answer");
   } else {
@@ -58,6 +49,8 @@ questionDivs[questionNumber].classList.remove("hide");
   //add and remove classes in js (display none)
 
 // WHEN all questions are answered or the timer reaches 0
+
+
 
 // THEN the game is over
 
